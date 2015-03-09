@@ -1,0 +1,173 @@
+@import "/_templates/jumbotron/css/bootstrap/bootstrap.less";
+@import "/_templates/jumbotron/css/yamm/yamm.less";
+
+@dark-blue:     #19558B;
+/*@dark-blue:     FireBrick;*/
+@light-blue:    #2C9EC0;
+@pink:          #AF8B9F;
+@orange:        #DFA479;
+@green:         #95A9AA;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;   /*height of sticky navbar*/
+  margin-bottom: 30px; /* Margin bottom by footer height */
+}
+
+header {
+  .navbar;
+  .navbar{
+    background-color: @dark-blue !important;
+    border: none !important;
+  }
+  .navbar-fixed-top;
+  .navbar-inverse;
+  .yamm;
+
+  .navbar-brand {
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:8px;
+    img {
+      height:30px;
+    }
+  }
+
+  .fa {
+    margin-right:5px;
+    line-height:18px; 
+  }
+
+  @media screen and (min-width:768px) {
+    .container {
+      padding-right:0px;
+      padding-left:0px;
+    }
+  }
+
+  nav {
+    /*max-height:80% !important;
+    overflow: scroll;*/
+
+    ul {
+      .nav; 
+      .navbar-nav;
+      li.dropdown {
+        a {color:white}
+        a:hover, a:active, a:focus {
+          color:@dark-blue !important;
+          background-color: #eee !important;
+        }a:focus {
+          background-color: #ccc !important;
+        }
+      }
+    }
+  
+    .login {
+
+      li {
+        padding:10px 0 0 15px;
+        a.dropdown-toggle {
+          color:white !important;
+        }
+        #user {
+          .btn; 
+          .btn-default;
+          .btn-sm;
+        }
+        #logout, #login {
+          .btn; 
+          .btn-primary;
+          .btn-sm;
+        }
+      }
+    }
+
+    @media screen and (min-width:768px) {
+      .login {
+        float:right;
+      }
+    }
+
+    .dropdown-menu {
+      left: 0; 
+      right: 0;
+      
+      li {
+        padding: 10px 30px;
+        background-color:white;
+      }
+
+      li [class*="col-"] {
+        background-color: #e5e1ea;
+        border: 1px solid #d1d1d1;
+        font-size: 1em;
+        line-height: 2;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: @dark-blue;
+  color: #fff;
+  /*margin-top:30px;
+  padding-top:10px;*/
+  bottom: 0;
+  height: 30px;
+  position: absolute;
+  width: 100%;
+  l
+  p {
+    margin:5px 0 5px 0;
+  }  
+}
+
+.jumbotron {
+  article {
+    .container;
+  }
+}
+
+.headlines {
+  .container;
+
+  section {.make-row();}
+
+  article {.make-md-column(4);}
+}
+
+
+.module_login {
+  .container;
+
+  form {
+    .make-row();
+    .make-xs-column(12);
+
+    .form-group {
+      label {
+      }
+      
+      input {
+        .form-control;
+      }
+    }
+
+    .submit {
+      .btn;
+      .btn-primary;
+
+    }
+
+  }
+}
+
