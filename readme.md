@@ -1,8 +1,8 @@
 CodeIgniter 3.0-dev with HMVC and Ion_Auth
 
-My first Github repository, I have simply combined CI3.0-dev with Wiredesignz HMVC module, and Ion_Auth.
+My first Github repository, I have simply combined CI3.0-dev with Wiredesignz HMVC module, and Ion_Auth. Also included is a template module. Documentation will be provided soon.
 
-For further reference see:
+Meanwhile, further information on HMVC and Ion_Auth is available here:
 
 HMVC
 https://bitbucket.org/wiredesignz/codeigniter-modular-extensions-hmvc/downloads
